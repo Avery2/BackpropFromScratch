@@ -3,7 +3,9 @@
 
 
 class Matrix:
-    def __init__(self, height=0, width=0, values=[]):
+    def __init__(self, height=0, width=0, values=None):
+        if values is None:
+            values = []
         self._values = values
         self._height = height
         self._width = width
@@ -28,14 +30,14 @@ class Matrix:
         return self._width
 
     @width.setter
-    def set_width(self, value):
+    def width(self, value):
         if value.isdigit():
             self._width = value
         else:
             raise ValueError("please enter a digit")  # unsure of terminology
 
     @height.setter
-    def set_height(self, value):
+    def height(self, value):
         if value.isdigit():
             self._height = value
         else:
