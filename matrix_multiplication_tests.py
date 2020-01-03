@@ -13,7 +13,7 @@ def test_matmult():
     expected_answer = [[55, 55, 55, 55, 55], [55, 55, 55, 55, 55], [55, 55, 55, 55, 55], [55, 55, 55, 55, 55],
                        [35, 35, 35, 35, 35]]
     answer = mm.matmul(mm.Matrix(values=a), mm.Matrix(values=b))
-    if answer == expected_answer
+    if answer == expected_answer:
         return True
     else:
         print(expected_answer)
