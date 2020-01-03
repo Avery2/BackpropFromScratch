@@ -49,7 +49,7 @@ def matmul(self, a: Matrix, b: Matrix):
     # In order for matrix multiplication to be defined, the number of columns in the first matrix must be equal to the
     # number of rows in the second matrix.
     if a.columns != b.rows:
-        raise ValueError("dimensions incorrect, matrix multiplication undefined")
+        raise ValueError("dimensions incorrect, product is undefined")
     return a * b  # filler, not functional
 
 
